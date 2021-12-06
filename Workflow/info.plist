@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>bundleid</key>
+	<string>com.alfredapp.emailsignatures</string>
+	<key>connections</key>
+	<dict>
+		<key>15D524A1-9F03-42B2-9BC8-8CA32BFD1DEB</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>760271A8-6624-4069-87A0-F9273545F839</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>760271A8-6624-4069-87A0-F9273545F839</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>A522FE6E-7FA7-4ACA-9F4A-03927EA6DFD3</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+	</dict>
+	<key>createdby</key>
+	<string>Vero Pepperrell</string>
+	<key>description</key>
+	<string>Use a Snippet Trigger to choose your email signature</string>
+	<key>disabled</key>
+	<false/>
+	<key>name</key>
+	<string>Trigger Email Signatures with Snippets</string>
+	<key>objects</key>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>focusedappvariable</key>
+				<false/>
+				<key>focusedappvariablename</key>
+				<string></string>
+				<key>keyword</key>
+				<string>sig</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.snippet</string>
+			<key>uid</key>
+			<string>15D524A1-9F03-42B2-9BC8-8CA32BFD1DEB</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>autopaste</key>
+				<true/>
+				<key>clipboardtext</key>
+				<string>{query}</string>
+				<key>ignoredynamicplaceholders</key>
+				<false/>
+				<key>transient</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.clipboard</string>
+			<key>uid</key>
+			<string>A522FE6E-7FA7-4ACA-9F4A-03927EA6DFD3</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>fixedorder</key>
+				<false/>
+				<key>items</key>
+				<string>[{"imagefile":"f2c64485e27031685ce695a580d2666051c09e64.png","title":"Alfred co-founder","arg":"Vero Pepperrell\nAlfred co-founder"},{"imagefile":"da99c62c5a5aae8d217d092489ffc0ae489150a5.png","title":"Maker of things","arg":"Vero\nMaker and inventor"},{"imagefile":"d2a5c2c6d7c155442bbd1bd4d0a924723ac40190.png","title":"Masked hero","arg":"Orev\nSecret Superhero"}]</string>
+				<key>runningsubtext</key>
+				<string></string>
+				<key>subtext</key>
+				<string></string>
+				<key>title</key>
+				<string></string>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.listfilter</string>
+			<key>uid</key>
+			<string>760271A8-6624-4069-87A0-F9273545F839</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+	</array>
+	<key>readme</key>
+	<string>Use a snippet trigger to pop up a prompt, from which you can choose which email signature you'd like to use; Work, personal or secret identity. Which will it be?
+
+1. Using the keyword:
+
+The snippet keyword is set to "sig" with any prefix or suffix you've set in the Shared Prefix box found in the Snippet Trigger object.
+
+2. Setting the snippet content:
+
+Change the content of your signatures in the List Filter object to reflect identities that are useful to you.
+
+This can be used for any scenario where you need to paste different content, but want to only have to remember a single snippet trigger.
+
+3. Pasting the snippet content:
+
+The workflow is currently set to automatically paste to the frontmost app. This assumes you've granted Alfred the necessary Accessibility permissions required for the Snippets feature. Type "help setting up snippets" into Alfred for more specific instructions on this.</string>
+	<key>uidata</key>
+	<dict>
+		<key>15D524A1-9F03-42B2-9BC8-8CA32BFD1DEB</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>8</integer>
+			<key>note</key>
+			<string>Set the snippet keyword you want to type (which will include any prefix/suffix, in this case "\\sig")</string>
+			<key>xpos</key>
+			<integer>40</integer>
+			<key>ypos</key>
+			<integer>40</integer>
+		</dict>
+		<key>760271A8-6624-4069-87A0-F9273545F839</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>10</integer>
+			<key>note</key>
+			<string>Create the list of snippets you'd like to use (E.g. Your email signatures for various identities)</string>
+			<key>xpos</key>
+			<integer>270</integer>
+			<key>ypos</key>
+			<integer>40</integer>
+		</dict>
+		<key>A522FE6E-7FA7-4ACA-9F4A-03927EA6DFD3</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>11</integer>
+			<key>note</key>
+			<string>Make sure "Automatically paste to frontmost app" is checked and your snippet will be pasted.</string>
+			<key>xpos</key>
+			<integer>500</integer>
+			<key>ypos</key>
+			<integer>40</integer>
+		</dict>
+	</dict>
+	<key>variablesdontexport</key>
+	<array/>
+	<key>version</key>
+	<string>2021.1</string>
+	<key>webaddress</key>
+	<string>https://www.alfredapp.com</string>
+</dict>
+</plist>
