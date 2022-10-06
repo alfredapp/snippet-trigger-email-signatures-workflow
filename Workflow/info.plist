@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>bundleid</key>
-	<string>com.alfredapp.emailsignatures</string>
+	<string>com.alfredapp.vero.emailsignatures</string>
 	<key>connections</key>
 	<dict>
 		<key>15D524A1-9F03-42B2-9BC8-8CA32BFD1DEB</key>
@@ -51,7 +51,7 @@
 				<key>focusedappvariablename</key>
 				<string></string>
 				<key>keyword</key>
-				<string>sig</string>
+				<string>{var:keyword}</string>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.trigger.snippet</string>
@@ -90,6 +90,8 @@
 				<false/>
 				<key>items</key>
 				<string>[{"imagefile":"f2c64485e27031685ce695a580d2666051c09e64.png","title":"Alfred co-founder","arg":"Vero Pepperrell\nAlfred co-founder"},{"imagefile":"da99c62c5a5aae8d217d092489ffc0ae489150a5.png","title":"Maker of things","arg":"Vero\nMaker and inventor"},{"imagefile":"d2a5c2c6d7c155442bbd1bd4d0a924723ac40190.png","title":"Masked hero","arg":"Orev\nSecret Superhero"}]</string>
+				<key>matchmode</key>
+				<integer>0</integer>
 				<key>runningsubtext</key>
 				<string></string>
 				<key>subtext</key>
@@ -112,7 +114,7 @@
 
 1. Using the keyword:
 
-The snippet keyword is set to "sig" with any prefix or suffix you've set in the Shared Prefix box found in the Snippet Trigger object.
+Use the "Configure Workflow" button to set your keyword, which you'll type with with any prefix or suffix you've set in the Shared Prefix box found in the Snippet Trigger object.
 
 2. Setting the snippet content:
 
@@ -130,11 +132,11 @@ The workflow is currently set to automatically paste to the frontmost app. This 
 			<key>colorindex</key>
 			<integer>8</integer>
 			<key>note</key>
-			<string>Set the snippet keyword you want to type (which will include any prefix/suffix, in this case "\\sig")</string>
+			<string>Set the snippet trigger you want to use. You'll type this trigger along with any prefix / suffix set in the Shared Prefix / Suffix setting.</string>
 			<key>xpos</key>
-			<integer>40</integer>
+			<real>45</real>
 			<key>ypos</key>
-			<integer>40</integer>
+			<real>55</real>
 		</dict>
 		<key>760271A8-6624-4069-87A0-F9273545F839</key>
 		<dict>
@@ -143,9 +145,9 @@ The workflow is currently set to automatically paste to the frontmost app. This 
 			<key>note</key>
 			<string>Create the list of snippets you'd like to use (E.g. Your email signatures for various identities)</string>
 			<key>xpos</key>
-			<integer>270</integer>
+			<real>275</real>
 			<key>ypos</key>
-			<integer>40</integer>
+			<real>55</real>
 		</dict>
 		<key>A522FE6E-7FA7-4ACA-9F4A-03927EA6DFD3</key>
 		<dict>
@@ -154,15 +156,39 @@ The workflow is currently set to automatically paste to the frontmost app. This 
 			<key>note</key>
 			<string>Make sure "Automatically paste to frontmost app" is checked and your snippet will be pasted.</string>
 			<key>xpos</key>
-			<integer>500</integer>
+			<real>505</real>
 			<key>ypos</key>
-			<integer>40</integer>
+			<real>55</real>
 		</dict>
 	</dict>
+	<key>userconfigurationconfig</key>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>default</key>
+				<string>sig</string>
+				<key>placeholder</key>
+				<string></string>
+				<key>required</key>
+				<false/>
+				<key>trim</key>
+				<true/>
+			</dict>
+			<key>description</key>
+			<string>Snippet trigger keyword, which will be used alongside any shared prefixes or suffixes you've set</string>
+			<key>label</key>
+			<string>Keyword</string>
+			<key>type</key>
+			<string>textfield</string>
+			<key>variable</key>
+			<string>keyword</string>
+		</dict>
+	</array>
 	<key>variablesdontexport</key>
 	<array/>
 	<key>version</key>
-	<string>2021.1</string>
+	<string>2022.1</string>
 	<key>webaddress</key>
 	<string>https://www.alfredapp.com</string>
 </dict>
