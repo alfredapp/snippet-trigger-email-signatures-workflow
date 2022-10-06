@@ -12,7 +12,7 @@ Use a snippet trigger to pop up a prompt, from which you can choose which email 
 
 ### 1. Using the keyword:
 
-Open the Snippet object and set your keyword, which you'll type with with any prefix or suffix you've set in the Shared Prefix box found in the Snippet Trigger object.
+Use the "Configure Workflow" button to set your keyword, which you'll type with with any prefix or suffix you've set in the Shared Prefix box found in the Snippet Trigger object.
 
 ### 2. Setting the snippet content:
 
